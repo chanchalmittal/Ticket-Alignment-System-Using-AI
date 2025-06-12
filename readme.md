@@ -1,7 +1,7 @@
-# AI-Ticket-Assistant - ChaiCode
+# AI-Ticket-Assistant 
 
 Welcome to the AI-Powered Ticket Management System!
-This course is a part of Chaicode youtube video series. This project is a web application that uses AI to automatically categorize, prioritize, and assign support tickets to the most appropriate moderators.
+This project is a web application that uses AI to automatically categorize, prioritize, and assign support tickets to the most appropriate moderators.
 
 # AI-Powered Ticket Management System
 
@@ -19,7 +19,7 @@ A smart ticket management system that uses AI to automatically categorize, prior
 - **Smart Moderator Assignment**
 
   - Automatic matching of tickets to moderators based on skills
-  - Fallback to admin assignment if no matching moderator found
+  - Fallback to admin assignment if no matching moderator is found
   - Skill-based routing system
 
 - **User Management**
@@ -123,8 +123,8 @@ A smart ticket management system that uses AI to automatically categorize, prior
 
 1. **Ticket Creation**
 
-   - User submits a ticket with title and description
-   - System creates initial ticket record
+   - User submits a ticket with a title and description
+   - The system creates an initial ticket record
 
 2. **AI Processing**
 
@@ -140,7 +140,7 @@ A smart ticket management system that uses AI to automatically categorize, prior
 
    - System searches for moderators with matching skills
    - Uses regex-based skill matching
-   - Falls back to admin if no match found
+   - Falls back to admin if no match is found
    - Updates ticket with assignment
 
 4. **Notification**
@@ -173,11 +173,11 @@ A smart ticket management system that uses AI to automatically categorize, prior
 ### Common Issues
 
 1. **Port Conflicts**
-   If you see "address already in use" error:
+   If you see the "address already in use" error:
 
    ```bash
-   # Find process using port 8288
-   lsof -i :8288
+   # Find the process using port 8288
+   lsof -i:8288
    # Kill the process
    kill -9 <PID>
    ```
@@ -205,13 +205,9 @@ A smart ticket management system that uses AI to automatically categorize, prior
 - `mongoose`: ^8.13.2
 - `nodemailer`: ^6.10.1
 
-## 🤝 Contributing
-
-we don't accept contributions for this project, as this is a part of a video and code files needs to given as it is.
-
 ## 🙏 Acknowledgments
 
 - Inngest for background job processing
 - Google Gemini for AI capabilities
 - Mailtrap for email testing
-- MongoDB for database
+- MongoDB for the database
